@@ -66,7 +66,9 @@ if st.button("Generate Description"):
             encoded_image = encode_image_from_url(image_url)
             
             # Define the prompt
-            prompt = "Based on this image, create a detailed prompt for generating a new image. Describe the scene, key elements, colors, lighting, mood, and composition, including specific visual features that should be replicated or stylized in a new version of the image. Ensure the prompt includes keywords for artistic style, perspective, and any relevant objects or characters, so it’s ready for use in image generation with another AI model. Give me the prompt in a paragraph format"
+            prompt = "Using the provided image as inspiration, craft a highly detailed prompt to generate a new image. Describe the overall scene, highlighting key elements, color schemes, lighting conditions, mood, and composition. Be specific about visual features, including subject positioning, background details, and any distinguishing characteristics that should be retained or stylized in the new version. Consider the viewpoint and perspective to ensure an accurate depiction, noting whether the subject is centered, foregrounded, or partially obscured. Include keywords for artistic style, depth, lighting effects (such as shadows, ambient lighting, or dramatic contrasts), and relevant objects or characters to capture the intended atmosphere and visual depth. This prompt should be formatted as a cohesive paragraph to guide the AI model in replicating the essential features and ambiance of the original image."
+
+
             
             # Get and display the description
             with st.spinner("Generating description..."):
